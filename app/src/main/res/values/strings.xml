@@ -1,7 +1,14 @@
 <resources>
+    <!--
+    Tanggal : 18-April-2019
+    Nama    : Harry Kurniawan
+    Nim     : 10116408
+    Kelas   : AKB-9 / IF-9
+    -->
     <string name="app_name">bloodshare</string>
 
     <string name="ty">Thank you for registering with us. One more step, you need to check your email to active your account</string>
+    <string name="codehere">enter verification code here. . .</string>
 
     <string-array name="spinn1">
         <item>Blood Type</item>

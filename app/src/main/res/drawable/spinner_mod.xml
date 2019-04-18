@@ -27,7 +27,7 @@
             <item
                 android:top="1dp"
                 android:right="5dp">
-                <bitmap android:src="@drawable/ic_arrow_dropdown"
+                <bitmap android:src="@drawable/ic_register_dropdown"
                     android:gravity="right"></bitmap>
             </item>
         </layer-list>

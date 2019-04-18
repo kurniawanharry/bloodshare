@@ -1,5 +1,10 @@
 <resources>
-
+    <!--
+        Tanggal : 18-April-2019
+        Nama    : Harry Kurniawan
+        Nim     : 10116408
+        Kelas   : AKB-9 / IF-9
+        -->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->

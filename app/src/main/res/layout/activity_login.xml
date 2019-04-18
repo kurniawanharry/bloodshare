@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tanggal : 18-April-2019
+    Nama    : Harry Kurniawan
+    Nim     : 10116408
+    Kelas   : AKB-9 / IF-9
+    -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,35 +14,36 @@
     android:background="@android:color/holo_blue_light"
     tools:context=".LoginActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <ImageView
-                android:layout_width="240dp"
+                android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_gravity="center_horizontal"
                 android:padding="15dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
                 android:src="@mipmap/ic_welcome_logo"
                 />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edit_text_log1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
+                android:textCursorDrawable="@android:color/white"
                 android:backgroundTint="@android:color/white"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp"
                 android:drawablePadding="12dp"
                 android:paddingBottom="20dp"
                 android:textColorHint="#fff"
@@ -45,7 +52,7 @@
             <EditText
                 android:id="@+id/edit_text_log2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Password"
                 android:backgroundTint="@android:color/white"
                 android:layout_marginLeft="30dp"
@@ -58,7 +65,7 @@
             <Button
                 android:id="@+id/button_log1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="30dp"
@@ -69,7 +76,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="OR"
                 android:textColor="@android:color/white"
                 android:layout_marginTop="15dp"
@@ -78,24 +85,25 @@
             <Button
                 android:id="@+id/button_log2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="CONNECT WITH FACEBOOK"
                 android:textColorHint="#fff"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:padding="2dp"
-                android:background="@drawable/button_mod"/>
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:background="@drawable/button_mod"
+                android:drawableStart="@drawable/ic_icons8_facebook_f_filled" />
 
             <TextView
                 android:id="@+id/txt_log1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="doesn't have account ? Register"
                 android:textColor="@color/bginvite"
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:textSize="15dp"/>
         </LinearLayout>
-    </ScrollView>
 </LinearLayout>

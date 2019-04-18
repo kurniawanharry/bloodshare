@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tanggal : 18-April-2019
+    Nama    : Harry Kurniawan
+    Nim     : 10116408
+    Kelas   : AKB-9 / IF-9
+    -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

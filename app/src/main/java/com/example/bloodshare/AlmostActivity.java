@@ -6,6 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/*
+Tanggal : 18-April-2019
+Nama    : Harry Kurniawan
+Nim     : 10116408
+Kelas   : AKB-9 / IF-9
+ */
+
 public class AlmostActivity extends AppCompatActivity {
 
     @Override

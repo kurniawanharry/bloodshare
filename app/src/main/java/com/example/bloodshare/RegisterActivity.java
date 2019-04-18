@@ -9,6 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toolbar;
 
+/*
+Tanggal : 18-April-2019
+Nama    : Harry Kurniawan
+Nim     : 10116408
+Kelas   : AKB-9 / IF-9
+ */
+
 public class RegisterActivity extends AppCompatActivity {
 
     android.support.v7.widget.Toolbar toolbar;

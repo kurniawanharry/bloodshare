@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tanggal : 18-April-2019
+    Nama    : Harry Kurniawan
+    Nim     : 10116408
+    Kelas   : AKB-9 / IF-9
+    -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@android:color/white"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@mipmap/ic_header"/>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -20,35 +26,38 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            >
 
             <EditText
                 android:id="@+id/edit_text_reg1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Username"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
                 android:drawablePadding="12dp"
-                android:paddingBottom="10dp"/>
+                android:paddingBottom="20dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Email"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
                 android:drawablePadding="12dp"
-                android:paddingBottom="30dp"/>
+                android:paddingBottom="20dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Phone Number"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
@@ -59,29 +68,27 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Male"
                     android:layout_marginLeft="45dp"
-                    android:paddingHorizontal="20dp" />
+                    android:paddingHorizontal="10dp" />
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Female"
                     android:layout_marginRight="45dp"
-                    android:paddingHorizontal="20dp"/>
+                    android:paddingHorizontal="10dp"/>
             </RadioGroup>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <Spinner
@@ -92,9 +99,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:entries="@array/spinn1"
-                    android:paddingTop="10dp"
-                    android:background="@drawable/spinner_mod"
-                    android:paddingBottom="10dp"></Spinner>
+                    android:background="@drawable/spinner_mod"></Spinner>
                 <Spinner
                     android:id="@+id/spin_reg2"
                     android:layout_width="fill_parent"
@@ -102,8 +107,6 @@
                     android:layout_weight="1"
                     android:layout_marginRight="30dp"
                     android:layout_marginLeft="20dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
                     android:background="@drawable/spinner_mod"
                     android:entries="@array/spinn2">
                 </Spinner>
@@ -112,107 +115,97 @@
             <EditText
                 android:id="@+id/edit_text_reg4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Password"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:drawablePadding="12dp"
                 android:paddingBottom="20dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Retype Password"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:drawablePadding="12dp"
                 android:paddingBottom="20dp"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginLeft="45dp"
-                    android:paddingHorizontal="20dp"
+                    android:paddingHorizontal="10dp"
                     android:text="Personal"/>
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginRight="45dp"
-                    android:paddingHorizontal="20dp"
+                    android:paddingHorizontal="10dp"
                     android:text="Organization"/>
             </RadioGroup>
 
             <Spinner
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/spinn3"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:paddingBottom="10dp"
-                android:background="@drawable/spinner_mod"
-                android:paddingTop="10dp">
+                android:background="@drawable/spinner_mod">
             </Spinner>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Home Address"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
                 android:paddingBottom="20dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="Default Location"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
-                android:drawableRight="@drawable/ic_blood_needed_location"
-                android:paddingBottom="10dp" />
+                android:drawableRight="@drawable/ic_blood_needed_location" />
 
             <CheckBox
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:text="Agree with Term and Conditions"/>
 
             <Button
                 android:id="@+id/btn_reg"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="REGISTER"
                 android:textColorHint="@android:color/holo_blue_light"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="25dp"
                 android:background="@drawable/button_mod2"
-                android:layout_marginBottom="30dp"/>
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp" />
         </LinearLayout>
-
-
     </ScrollView>
-
 </LinearLayout>

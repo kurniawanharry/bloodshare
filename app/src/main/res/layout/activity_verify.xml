@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tanggal : 18-April-2019
+    Nama    : Harry Kurniawan
+    Nim     : 10116408
+    Kelas   : AKB-9 / IF-9
+    -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="We have send verification code to your email"
-        android:textColor="@color/shhdr"
+        android:textColor="@color/bginvite"
         android:textAlignment="center"
         android:layout_above="@id/edt_txt_verify1"
         android:layout_marginBottom="50dp"
@@ -33,13 +39,16 @@
         android:id="@+id/edt_txt_verify1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="enter verification code here..."
+        android:hint="@string/codehere"
+        android:textCursorDrawable="@android:color/white"
+        android:textColorHint="@color/bginvite"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:textColor="@android:color/white"
         android:backgroundTint="@android:color/white"
-        android:textColor="@color/bginvite"
-        android:textAlignment="center"
         android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="20dp"
-        android:textColorHint="@color/shhdr"
         android:layout_above="@id/btn_verify"
         android:paddingBottom="20dp"/>
 
@@ -62,6 +71,6 @@
         android:text="doesn't get the code ? Resend"
         android:layout_below="@+id/btn_verify"
         android:textAlignment="center"
-        android:textColor="@color/shhdr"
+        android:textColor="@color/bginvite"
         android:layout_marginTop="15dp"/>
 </RelativeLayout>
