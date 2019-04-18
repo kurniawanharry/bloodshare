@@ -59,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Phone Number"
+                android:inputType="number"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
@@ -69,6 +70,8 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
                 <RadioButton
                     android:layout_width="match_parent"
@@ -89,6 +92,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <Spinner
@@ -117,6 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
@@ -128,6 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Retype Password"
+                android:inputType="textPassword"
                 android:ems="10"
                 android:backgroundTint="@android:color/black"
                 android:layout_marginRight="30dp"
@@ -138,6 +144,8 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -162,6 +170,7 @@
                 android:entries="@array/spinn3"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/spinner_mod">
             </Spinner>
 
@@ -191,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:paddingLeft="20dp"
                 android:text="Agree with Term and Conditions"/>
 
