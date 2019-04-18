@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".AlmostActivity">
+    
+    <TextView
+        android:id="@+id/txt_almost1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Almost There"
+        android:textColor="@android:color/white"
+        android:textSize="34dp"
+        android:layout_above="@id/txt_almost2"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_almost2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_almost"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/ty"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btn_almost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="VERIFY"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/button_mod"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+</RelativeLayout>

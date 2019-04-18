@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">bloodshare</string>
+
+    <string name="ty">Thank you for registering with us. One more step, you need to check your email to active your account</string>
+
+    <string-array name="spinn1">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
+    <string-array name="spinn2">
+        <item>Reshus</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="spinn3">
+        <item>Job</item>
+        <item>Accountant</item>
+        <item>Sofware Enginner</item>
+    </string-array>
+</resources>

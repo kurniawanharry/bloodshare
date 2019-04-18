@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".VerifyActivity">
+
+    <TextView
+        android:id="@+id/txt_verify1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Account"
+        android:textColor="@android:color/white"
+        android:textSize="38dp"
+        android:textAlignment="center"
+        android:layout_above="@id/txt_verify2"
+        android:layout_marginBottom="7dp"/>
+
+    <TextView
+        android:id="@+id/txt_verify2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We have send verification code to your email"
+        android:textColor="@color/shhdr"
+        android:textAlignment="center"
+        android:layout_above="@id/edt_txt_verify1"
+        android:layout_marginBottom="50dp"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_txt_verify1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter verification code here..."
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/bginvite"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/shhdr"
+        android:layout_above="@id/btn_verify"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SEND"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/button_mod"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_verify3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="doesn't get the code ? Resend"
+        android:layout_below="@+id/btn_verify"
+        android:textAlignment="center"
+        android:textColor="@color/shhdr"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

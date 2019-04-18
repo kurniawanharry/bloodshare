@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#43b3e6</color>
+    <color name="fonttittle">#404041</color>
+    <color name="fontdesc">#808284</color>
+    <color name="separator">#939597</color>
+    <color name="bginvite">#f1f1f2</color>
+    <color name="shhdr">#d1d2d4</color>
+</resources>

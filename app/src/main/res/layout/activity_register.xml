@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_reg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="30dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Phone Number"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:layout_marginLeft="45dp"
+                    android:paddingHorizontal="20dp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:layout_marginRight="45dp"
+                    android:paddingHorizontal="20dp"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spin_reg1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:entries="@array/spinn1"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/spinner_mod"
+                    android:paddingBottom="10dp"></Spinner>
+                <Spinner
+                    android:id="@+id/spin_reg2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/spinner_mod"
+                    android:entries="@array/spinn2">
+                </Spinner>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_text_reg4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Retype Password"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Personal"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Organization"/>
+            </RadioGroup>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinn3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/spinner_mod"
+                android:paddingTop="10dp">
+            </Spinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Home Address"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:paddingBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Default Location"
+                android:ems="10"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawableRight="@drawable/ic_blood_needed_location"
+                android:paddingBottom="10dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="20dp"
+                android:text="Agree with Term and Conditions"/>
+
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="REGISTER"
+                android:textColorHint="@android:color/holo_blue_light"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_mod2"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
