@@ -14,6 +14,8 @@
         <item>Blood Type</item>
         <item>A</item>
         <item>B</item>
+        <item>O</item>
+        <item>AB</item>
     </string-array>
 
     <string-array name="spinn2">
@@ -22,6 +24,10 @@
         <item>A-</item>
         <item>B+</item>
         <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
         <item></item>
     </string-array>
 
@@ -29,5 +35,6 @@
         <item>Job</item>
         <item>Accountant</item>
         <item>Sofware Enginner</item>
+        <item>Others</item>
     </string-array>
 </resources>
